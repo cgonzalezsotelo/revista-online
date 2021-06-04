@@ -1,0 +1,31 @@
+.contenedor {
+  display: grid;
+  grid-template: 80px 1fr 250px 50px / 100%;
+  grid-template-areas: "menu" "contenido" "newsletter" "footer";
+}
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template: 80px 1fr 250px 50px / 35% 35% 30%;
+    grid-template-areas: "menu menu menu" "contenido contenido aside" "newsletter newsletter newsletter" "footer footer footer";
+  }
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.contenido {
+  grid-area: contenido;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.newsletter {
+  grid-area: newsletter;
+}
+
+.footer {
+  grid-area: footer;
+}

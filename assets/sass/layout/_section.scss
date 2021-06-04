@@ -1,0 +1,23 @@
+.newsletter {
+  width: 100%;
+  background-color: #f2f4f5;
+  text-align: center;
+  padding: 2rem 0;
+  &__title {
+    font-size: 24px;
+  }
+  &__text {
+    padding: 2rem 2rem;
+  }
+  &__input,
+  &__button {
+    display: inline-block;
+    border-width: 0;
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  &__button {
+    background-color: coral;
+    color: white;
+  }
+}
